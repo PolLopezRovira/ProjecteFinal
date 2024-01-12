@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---- HEADER ----- */
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#nom {
+  position: relative;
+  top: 10px;
+  left: 1%;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#imatge-header {
+  position: relative;
+  width: 30px;
+  height: 35.5px;
+  top: 3px;
+  left: 95%;
+  cursor: pointer;
+}
+
+#imatge-header:hover{
+  animation: botarpilota 2s ease infinite;
+}
+
+#imatge-header img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---- MENÚ PRINCIPAL ----- */
+
+#menuprincipal {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  margin-top: 30px;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu2 i {
+  display: none;
+}
+
+nav div {
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  margin-inline: 30px;
+}
+
+nav div a {
+  text-decoration: none;
+  color: black;
+  transition: color 375ms linear;
+}
+
+nav #enllaços a {
+  color: #2196F3;
+}
+
+nav div:nth-child(2) a:hover {
+  color: #2196F3;
+}
+
+nav div:nth-child(3) a:hover {
+  color: #2196F3;
+}
+
+nav div:nth-child(4) a:hover {
+  color: #2196F3;
+}
+
+nav div:nth-child(5) a:hover {
+  color: #2196F3;
+}
+
+nav div:nth-child(1) a:hover {
+  color: #2196F3;
+
+}
+
+/* ---- SECCIÓ ----- */
+
+section {
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(245, 245, 245);
+}
+
+.arq1 {
+  padding-left: 100px;
+}
+
+.requadre {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 450px;
+  margin-bottom: 30px;
+  padding-block: 5px;
+  border-radius: 20px;
+  border-color: rgb(194, 194, 194);
+  box-shadow: 0 0 10px black;
+  transition: background-color 450ms linear, color 450ms linear, box-shadow 450ms linear;
+  cursor: pointer;
+}
+
+.requadre p {
+  margin-bottom: 0px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rq1:hover {
+  background-color: #008835;
+  color: white;
+  box-shadow: 0 0 10px #008835;
+}
+
+.rq2:hover {
+  background-color: #F00000;
+  color: white;
+  box-shadow: 0 0 10px #F00000;
+}
+
+.rq3:hover {
+  background-color: #001489;
+  color: white;
+  box-shadow: 0 0 10px #001489;
+}
+
+.rq4:hover {
+  background-color: #C70101;
+  color: white;
+  box-shadow: 0 0 10px #C70101;
+}
+
+.rq5:hover {
+  background-color: #011EA0;
+  color: white;
+  box-shadow: 0 0 10px #011EA0;
+}
+
+.rq6:hover {
+  background-color: #CF152D;
+  color: white;
+  box-shadow: 0 0 10px #CF152D;
+}
+
+.rq7:hover {
+  background-color: white;
+  color: purple;
+  box-shadow: 0 0 10px white;
+}
+
+.rq8:hover {
+  background-color: #DC052D;
+  color: white;
+  box-shadow: 0 0 10px #DC052D;
+}
+
+.rq9:hover {
+  background-color: #FF0000;
+  color: white;
+  box-shadow: 0 0 10px #FF0000;
+}
+
+.rq10:hover {
+  background-color: #061934;
+  color: white;
+  box-shadow: 0 0 10px #061934;
+}
+
+.rq11:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 0 10px #000000;
+}
+
+.rq12:hover {
+  background-color: #E1261C;
+  color: white;
+  box-shadow: 0 0 10px #E1261C;
+}
+
+.rq1:hover a {
+  color: white;
+}
+
+.rq2:hover a {
+  color: white;
+}
+
+.rq3:hover a {
+  color: white;
+}
+
+.rq4:hover a {
+  color: white;
+}
+
+.rq5:hover a {
+  color: white;
+}
+
+.rq6:hover a {
+  color: white;
+}
+
+.rq7:hover a {
+  color: purple;
+}
+
+.rq8:hover a {
+  color: white;
+}
+
+.rq9:hover a {
+  color: white;
+}
+
+.rq10:hover a {
+  color: white;
+}
+
+.rq11:hover a {
+  color: white;
+}
+
+.rq12:hover a {
+  color: white;
+}
+
+/* ---- BOTÓ PER PUJAR A DALT DE TOT DE LA WEB ----- */
+
+#pujaradalt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color:#2196F3;
+  border: 1px solid #2196F3 ;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  transition: transform 400ms linear,background-color 400ms linear, box-shadow 400ms linear, color 400ms linear ;
+  transform: scale(0);  
+}
+
+#pujaradalt:hover{
+  filter: brightness(1.13);
+  background-color: #2196F3;
+  box-shadow: 0 0 20px #2196F3;
+  color: white
+}
+
+/* ---- PEU DE PÀGINA ----- */
+
+footer {
+  display: flex;
+  width: 100vw;
+  bottom: 0;
+  justify-content: center;
+}
+
+footer a {
+  padding-block: 25px;
+  padding-inline: 15px;
+  font-size: 1.5rem;
+  border: none;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  transition: color 375ms linear;
+}
+
+footer a:hover {
+  color: #2196F3 !important;
+}
+
+/* ---- ANIMACIONS ----- */
+
+@keyframes botarpilota {
+  0%{
+    transform: translateY(0);
+  }
+  7%{
+    transform: translateY(-8px);
+  }
+  14%{
+    transform: translateY(0px);
+  }
+  17%{
+    transform: translateY(-4px);
+  }
+  20%{
+    transform: translateY(0);
+  }
+  23%{
+    transform: translateY(-2px);
+  }
+  26%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes apareixermenu {
+  to{
+    margin-top: 105px;
+  }
+}
+
+@keyframes desapareixermenu {
+  from{
+    margin-top: 105px;
+  }
+  to{
+    margin-top: -250px;
+  }
+}
+
+/* ---- ADAPTACIÓ A MÒBIL I TABLET ----- */
+
+@media(max-width:1024px){
+ 
+  #nom {
+    left: -10px;
+  }
+
+  #imatge-header{
+    left: 87%;
+  }
+
+  #menuprincipal {
+    flex-direction: column;
+    overflow-y: hidden;
+    width: 100%;
+    height: 333.5px;
+    margin-top: -250px;
+    z-index: 1;
+    background-color: rgb(245, 245, 245);
+  }
+
+  #menuprincipal div{
+    overflow-y: hidden;
+  }
+
+  #menu2 {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+  }
+
+  .novisible {
+    visibility: hidden;
+  }
+
+  .animate{
+    animation: apareixermenu 1.25s ease-out  forwards;
+  }
+
+  .animates{
+    animation: desapareixermenu 1.25s ease-out  forwards;
+  }
+
+  #menu2 i {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+    font-size: 40px;
+    transition: color 450ms linear;
+    cursor: pointer;
+  }
+
+  #menu2 i:hover {
+    color: #2196F3;
+  }
+
+  .requadre{
+    width: 250px;
+  }
+
+  #pujaradalt{
+    font-size: 0.75rem;
+    width: 35px;
+    height: 35px;
+    bottom: 30px;
+    right: 30px;
+  }
+  
+  footer a {
+    font-size: 0.5rem;
+  }
+  
+}
